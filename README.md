@@ -13,7 +13,6 @@ Apriori algorithm is a classical algorithm used for mining frequent itemsets and
 2) DBScan:  
 Desity Based Scan is a clustering algorithm commonly used in data mining. DBScan groups together points that are close to each other based on a distance measurement (usually Euclidean distance) and a minimum number of points. It also marks as outliers the points that are in low-density regions. 
 DBScan takes two parameters as input: i) eps - maximum radius of the neighborhood from point p ii) minPos - minimum number of points required to form a dense region. It starts with an arbitrary starting point that has not been visited. This point's ε-neighborhood is retrieved, and if it contains sufficiently many points, a cluster is started. Otherwise, the point is labeled as noise. Note that this point might later be found in a sufficiently sized ε-environment of a different point and hence be made part of a cluster.
-
 If a point is found to be a dense part of a cluster, its ε-neighborhood is also part of that cluster. Hence, all points that are found within the ε-neighborhood are added, as is their own ε-neighborhood when they are also dense. This process continues until the density-connected cluster is completely found. Then, a new unvisited point is retrieved and processed, leading to the discovery of a further cluster or noise.
 
 3) Decision Tree:  
